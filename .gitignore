@@ -1,0 +1,7 @@
+*~
+*.bak
+*.pyc
+*.hyc
+backups
+__pycache__
+.vscode

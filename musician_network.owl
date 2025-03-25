@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="file:///home/sean/Code/musician-graph/musician_network.owl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#based_in">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N142c8d07326f4d86b67fddcae7390f04"/>
+    <rdfs:domain rdf:nodeID="Nf16995cced704268b34c23ecb8ff91c9"/>
+    <rdfs:range rdf:nodeID="N95575600d46c4ac890f233eba8092e42"/>
+    <rdfs:range rdf:nodeID="N9ee213bf43b4405cbb209b2fa8762fd2"/>
+    <rdfs:range rdf:nodeID="Nf8eb493ab0b0484aa50ca60d96e5785d"/>
+    <rdfs:comment xml:lang="en">This property indicates the location where a given group or musician is based.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11005c75c6824c98b3c35c71f6259cca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#located_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Progressive_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55be435d8174454ba82f80af41bcbb4e">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#City"/>
+    <rdf:rest rdf:nodeID="Nd59fb2f7f05a4eb3a54811175e3f30bb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A musical genre. More than one may be associated with a given Musician and/or Group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N021b289771ac488ba4f25e43bc266196">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#influences"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pasi_Koskinen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N142c8d07326f4d86b67fddcae7390f04">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#based_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Queens_of_the_Stone_Age">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Joey_Castillo"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mark_Lanegan"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alain_Johannes"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Hernández"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Grohl"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Oliveri"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Natasha_Shneider"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Palm_Desert_Scene"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jon_Theodore"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Troy_Van_Leeuwen"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Michael_Shuman"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dean_Fertita"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Josh_Homme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6072c9a4feea4b52925a0c01345acf8e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#former_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9565e770e984b68bcbd856884cf0389">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#plays"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N25c21534fa23467792a00f46aa575ebd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#influenced_by"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#influenced_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N76611a4582204f1bb94ae8e9fa9f38d0"/>
+    <rdfs:range rdf:nodeID="N25c21534fa23467792a00f46aa575ebd"/>
+    <owl:propertyDisjointWith rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#influences"/>
+    <rdfs:comment xml:lang="en">Indicates what Genres are influenced by a given Genre.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_CRX_(band)">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Valensi"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Oberhofer"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Firooz_Zahedi"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_New_wave_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Garage_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Power_pop"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Industrial_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Palm_Desert_Scene"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Pop_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Indie_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Richie_Follin"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Roger_Öjersson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#influences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N5ce2e879db8e4c2caf9fc46f8420967d"/>
+    <rdfs:range rdf:nodeID="N021b289771ac488ba4f25e43bc266196"/>
+    <rdfs:comment xml:lang="en">Indicates what Genres the given Genre influences.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Unida">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Reeder_(bassist)"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_John_Garcia_(singer)"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ee213bf43b4405cbb209b2fa8762fd2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#based_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Nation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ed_Mundell">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#located_in">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N6d44268cdfa14ff5ae485989b438017a"/>
+    <rdfs:domain rdf:nodeID="N11005c75c6824c98b3c35c71f6259cca"/>
+    <rdfs:range rdf:nodeID="N8729da93ff7b41629245149ff8ff6630"/>
+    <rdfs:range rdf:nodeID="Nff92e26007014a3497bebefffd422bfa"/>
+    <rdfs:comment xml:lang="en">This property indicates that a given geographic location is located inside of another.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Boris_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Stephen_McBean">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Deron_Miller">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Leadfoot_(band)">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Phil_Swisher"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Karl_Agell"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Sludge_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Trouble_(band)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Doom_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ted_Kirkpatrick"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Eric_Wagner"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jeff_Olson_(Musician)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Barry_Stern"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Bruce_Franklin_(guitarist)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Mannhai">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pasi_Koskinen"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ilkka_Laaksomaa"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Olli-Pekka_Laine"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kasper_Mårtenson"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mikko_Pietinen"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jani_Muurinen"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Tito_&amp;_Tarantula">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Petra_Haden"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dominique_Davalos"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tony_Marsico"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Vincent_(musician)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Ortiz"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Debra_Dobkin"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jennifer_Condos"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Richard_Edson"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rafael_Gayol"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Chicano_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Latin_alternative"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Latin_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tito_Larriva"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Hamish_Rosser">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chad_I_Ginsburg">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf16995cced704268b34c23ecb8ff91c9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#based_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tobias_Strandvik">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Big_Business_(band)">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Sludge_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Toshi_Kasai"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jared_Warren"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Coady_Willis"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ted_Kirkpatrick">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb74f6c766197478792a08b91ca4e6457">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_genre"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Matt_Deis">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_CKY_(band)">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Post-grunge"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_metal"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Deron_Miller"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Matt_Deis"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Daniel_Davies_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chad_I_Ginsburg"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jess_Margera"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Daniel_Lioneye">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mige_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Burton_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Linde_Lindström"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_metal"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Hiili_Hiilesmaa"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ville_Valo"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Black_Mountain_(band)">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Space_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Progressive_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rachel_Fannan"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Stephen_McBean"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Debra_Dobkin">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#born_in">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="Nb0b83570f32e4999ba6c596e884d8f1e"/>
+    <rdfs:range rdf:nodeID="Na24e7272e48c4770809803e7b0a27ed7"/>
+    <rdfs:range rdf:nodeID="N8577c580bced4e1aa19643e78da35976"/>
+    <rdfs:range rdf:nodeID="N781cf4ff4a944a69b43561a1086aa0e1"/>
+    <owl:propertyDisjointWith rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#located_in"/>
+    <rdfs:comment xml:lang="en">This property indicates where the given Musician was born.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N781cf4ff4a944a69b43561a1086aa0e1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#born_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Monster_Magnet">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Space_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_John_McBain_(musician)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ed_Mundell"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Wyndorf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ce2e879db8e4c2caf9fc46f8420967d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#influences"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Yawning_Man">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mario_Lalli"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Palm_Desert_Scene"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Neo-psychedelia"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Experimental_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Acid_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Hernández"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6044fd0135b54f9487b209407495acd4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#had_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Sahg">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kvitrafn"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_King_ov_Hell"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Thomas_Tofthagen"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Doom_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Olav_Iversen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Hermano_(band)">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Steve_Earle_(drummer)"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_John_Garcia_(singer)"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff92e26007014a3497bebefffd422bfa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#located_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61f5d3dbe33f41e0b5c0b5102e03ee57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#current_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Region">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A region within a nation. This may be a state, province, prefecture, territory, or similar.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_The_Bakerton_Group">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dan_Maines"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tim_Sult"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jean-Paul_Gaster"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Neil_Fallon"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Jam_band"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues-rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mick_Schauer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_The_Obsessed">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Doom_metal"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Bruce_Falkinburg"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Reeder_(bassist)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Weinrich"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Group">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Groups of musicians, be they traditional bands, boy bands, girl bands, orchestras, collectives, or any other grouping of 2 or more musicians.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc25f9cff92e141229516ac37e738b91c">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Nation"/>
+    <rdf:rest rdf:nodeID="Ndacd2217ce6c4c69925145f2ca78b5c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Catching">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Reed_Mullin">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ville_Valo">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Rock_music">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Olav_Iversen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Lee_Stuart">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Post-grunge">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8729da93ff7b41629245149ff8ff6630">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#located_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Nation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Corrosion_of_Conformity">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Southern_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hardcore_punk"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Crossover_thrash"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Sludge_metal"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Southern_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Woody_Weatherman"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mike_Dean_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pepper_Keenan"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Phil_Swisher"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Karl_Agell"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Reed_Mullin"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_John_Garcia_(singer)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="https://progdrum.github.io/ontologies/musician-network/0.0.2"/>
+    <rdfs:comment xml:lang="en">A representation of relations between bands, musicians, musical genres, and more.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Monkey3">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Boris_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kevin_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_DB_(musician)"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Walter_(musician)"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Picasso_(musician)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Orquesta_del_Desierto">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Palm_Desert_Scene"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mario_Lalli"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pete_Stahl"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Hernández"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Kamchatka_(band)">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Per_Wiberg"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Thomas_%22Juneor%22_Andersson"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tobias_Strandvik"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Linus_Carlsson"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Roger_Öjersson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Barry_Stern">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Wolfmother">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Experimental_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Neo-psychedelia"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chris_Ross_(musician)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ian_Peres"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Hamish_Rosser"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Andrew_Stockdale"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Instrument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An instrument that may be played by a Musician</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Olli-Pekka_Laine">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#former_member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N6072c9a4feea4b52925a0c01345acf8e"/>
+    <rdfs:range rdf:nodeID="Nead79754a6b74e23a0bff9be11493fa6"/>
+    <rdfs:comment xml:lang="en">Indicates that a given Musician is a former member of the named Group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66adfd5eb0444a778076c07db3f89cd8">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#former_member"/>
+    <rdf:rest rdf:nodeID="N0bd47297847b40fbbdd00287e5e0406c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Big_Sugar_(band)">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Progressive_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Reggae"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Reggae_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Acoustic_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Rock_music"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Paul_Brennan_(Canadian_musician)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Terry_Wilkins"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chris_Colepaugh"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Gordie_Johnson"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd59fb2f7f05a4eb3a54811175e3f30bb">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+    <rdf:rest rdf:nodeID="N6bbfcac185374d1db99ffb85c3972bc7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nead79754a6b74e23a0bff9be11493fa6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#former_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Chicano_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tony_Marsico">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfa5d6cf91fd45b18f119ec44b6f41da">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc70891e55f6743a18fc424795c2866e7">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_member"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mige_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#has_genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:nodeID="N7849f05afaa14fce93695c56b6d5e2aa"/>
+    <rdfs:domain rdf:nodeID="Nb74f6c766197478792a08b91ca4e6457"/>
+    <rdfs:range rdf:nodeID="Nd0d948c8203449c08413b1368bd266e8"/>
+    <rdfs:comment xml:lang="en">A property indicating a genre assigned to a given musician or group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Thomas_%22Juneor%22_Andersson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jean-Paul_Gaster">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Halfway_to_Gone__Halfway_to_Gone__1">
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chuck_Dukehart"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Southern_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Lee_Stuart"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Danny_Gollin"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Lou_Gorra"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#current_member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N6b0b842271454e4f8ee35fe01fd3a9d8"/>
+    <rdfs:range rdf:nodeID="N61f5d3dbe33f41e0b5c0b5102e03ee57"/>
+    <rdfs:comment xml:lang="en">Indicates that the given Musician is currently a member of the named Group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hardcore_punk">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Transcoder_(band)">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_New_wave_music"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Grunge"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Punk_rock"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jonathan_Veriez"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jan_Van_Acker"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Minco_De_Bruin"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Steve_Lehnen"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Miguel_Wish"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Maarten_Baert"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Philip_Verbrugge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Karl_Agell">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Petra_Haden">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#has_member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N48096ff3a1e64d4e8e8a2b85cf7b8934"/>
+    <rdfs:range rdf:nodeID="Nbfa5d6cf91fd45b18f119ec44b6f41da"/>
+    <rdfs:comment xml:lang="en">A property indicating a Musician who is a part of the given Group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Andrew_Stockdale">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0d948c8203449c08413b1368bd266e8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_genre"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#had_member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N93124ffbe3e740e6991ab4f938e017de"/>
+    <rdfs:range rdf:nodeID="N6044fd0135b54f9487b209407495acd4"/>
+    <rdfs:comment xml:lang="en">A property indicating a Musician that had previously been part of the given Group.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Hiili_Hiilesmaa">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jess_Margera">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mark_Lanegan">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Nebula_(band)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Eddie_Glass"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rob_Oswald"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#plays">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:nodeID="Nf9565e770e984b68bcbd856884cf0389"/>
+    <rdfs:range rdf:nodeID="N9eb8807bf95c43f69f470c3c9b6930bd"/>
+    <rdfs:comment xml:lang="en">Denotes an instrument played by a given Musician.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d44268cdfa14ff5ae485989b438017a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#located_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Miguel_Wish">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7849f05afaa14fce93695c56b6d5e2aa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_genre"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0bd47297847b40fbbdd00287e5e0406c">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#had_member"/>
+    <rdf:rest rdf:nodeID="Nc70891e55f6743a18fc424795c2866e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Reeder_(drummer)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mikko_Pietinen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ian_Peres">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Richard_Edson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34269287bfd94659bba3551eed0da4e2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N55be435d8174454ba82f80af41bcbb4e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Hernández">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Grohl">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8eb493ab0b0484aa50ca60d96e5785d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#based_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Oliveri">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0b83570f32e4999ba6c596e884d8f1e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#born_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndacd2217ce6c4c69925145f2ca78b5c7">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Region"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Grunge">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Musician">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Individual musicians, who may or may not be part of groups.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Power_pop">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Michael_Shuman">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Earthlings%3F">
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Acid_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Space_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pete_Stahl"/>
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Catching"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Fred_Drake"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Eric_Wagner">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N95575600d46c4ac890f233eba8092e42">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#based_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Southern_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Doom_metal">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dave_Wyndorf">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mick_Schauer">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Pop_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Linde_Lindström">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rafael_Gayol">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N48096ff3a1e64d4e8e8a2b85cf7b8934">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#has_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#Nation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A nation state</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tim_Sult">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Burton_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Neil_Fallon">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Daniel_Davies_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4786b0a2ac074b2593e6ea3583b56c38">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Instrument"/>
+    <rdf:rest rdf:nodeID="Nfb43d44ae82a465fba4d05edbd59cf47"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Reggae_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Reggae">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Palm_Desert_Scene">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Vincent_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_New_wave_music">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Fred_Drake">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9eb8807bf95c43f69f470c3c9b6930bd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#plays"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Instrument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Indie_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kasper_Mårtenson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Tito_Larriva">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mike_Dean_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Ilkka_Laaksomaa">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b5c756fa4aa44a59b8beacb81e943b4">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#current_member"/>
+    <rdf:rest rdf:nodeID="N66adfd5eb0444a778076c07db3f89cd8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jennifer_Condos">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Walter_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb43d44ae82a465fba4d05edbd59cf47">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+    <rdf:rest rdf:nodeID="Nc25f9cff92e141229516ac37e738b91c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Latin_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93124ffbe3e740e6991ab4f938e017de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#had_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Neo-psychedelia">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Maarten_Baert">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Per_Wiberg">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kvitrafn">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Nick_Valensi">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Josh_Homme">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8577c580bced4e1aa19643e78da35976">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#born_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Nation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Linus_Carlsson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na24e7272e48c4770809803e7b0a27ed7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#born_in"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chuck_Dukehart">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Firooz_Zahedi">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Danny_Gollin">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Weinrich">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Bruce_Falkinburg">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Psychedelic_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Paul_Brennan_(Canadian_musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b0b842271454e4f8ee35fe01fd3a9d8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#current_member"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_DB_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_metal">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Jam_band">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chris_Colepaugh">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Troy_Van_Leeuwen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Phil_Swisher">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Minco_De_Bruin">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alfredo_Ortiz">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jani_Muurinen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Hard_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jan_Van_Acker">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#group_Fu_Manchu_(band)">
+    <ns1:has_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Reeder_(drummer)"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Brant_Bjork"/>
+    <ns1:had_member rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Eddie_Glass"/>
+    <ns1:has_genre rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Stoner_rock"/>
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#City">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A city</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rob_Oswald">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Mario_Lalli">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Alain_Johannes">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Bruce_Franklin_(guitarist)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues-rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Eddie_Glass">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Lou_Gorra">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Southern_metal">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Rachel_Fannan">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6bbfcac185374d1db99ffb85c3972bc7">
+    <rdf:first rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Group"/>
+    <rdf:rest rdf:nodeID="N4786b0a2ac074b2593e6ea3583b56c38"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Natasha_Shneider">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Alternative_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Latin_alternative">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Industrial_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Punk_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Picasso_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_King_ov_Hell">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dean_Fertita">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Woody_Weatherman">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N76611a4582204f1bb94ae8e9fa9f38d0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#influenced_by"/>
+    <owl:someValuesFrom rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Garage_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Sludge_metal">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Steve_Earle_(drummer)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Terry_Wilkins">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dominique_Davalos">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Philip_Verbrugge">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pete_Stahl">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Kevin_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Joey_Castillo">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3bb3152a3ed41158f1105761d9cd839">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+    <owl:members rdf:nodeID="N1b5c756fa4aa44a59b8beacb81e943b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Steve_Lehnen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_John_McBain_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Coady_Willis">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jonathan_Veriez">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Dan_Maines">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Acid_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Blues_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Heavy_metal_music">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Thomas_Tofthagen">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Richie_Follin">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Oberhofer">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Experimental_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Gordie_Johnson">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Space_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Pepper_Keenan">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Acoustic_rock">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#genre_Crossover_thrash">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Toshi_Kasai">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jeff_Olson_(Musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Chris_Ross_(musician)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jon_Theodore">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Scott_Reeder_(bassist)">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Jared_Warren">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/sean/Code/musician-graph/musician_network.owl#musician_Brant_Bjork">
+    <rdf:type rdf:resource="file:///home/sean/Code/musician-graph/musician_network.owl#Musician"/>
+  </rdf:Description>
+</rdf:RDF>
