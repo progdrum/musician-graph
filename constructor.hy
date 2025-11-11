@@ -1,4 +1,4 @@
-(import rdflib [Graph])
+(import rdflib)
 (import requests)
 (import owlready2 *)
 (require hyrule.argmove [->])
@@ -28,10 +28,11 @@
 
 (let [results (requests.get "http://localhost:3030/ds/sparql"
                             :params {"query" cquery "format" "xml"})
-      g (-> (Graph)
+      ;; Need to fully qualify "Graph" in Hy or it will throw a dumb error!
+      g (-> (rdflib.Graph)
             (.parse "file:///home/sean/Code/musician-graph/musician_network.owl" 
                     :format "xml"))
-      result-graph (Graph)]
+      result-graph (rdflib.Graph)]
   (for [triple (g.query cquery)]
     (result-graph.add triple))
   (for [triple (g.query cquery)]
