@@ -4,6 +4,8 @@
 (require hyrule.argmove [->])
 
 
+;; Even when I query across multiple instances, this will still generate unique triples? I certainly hope so!
+;; I guess I can try with one band that has multiple genres and find out.
 (setv cquery #[[PREFIX : <file:///home/sean/Code/musician-graph/musician_network.owl#>
                 PREFIX dbo: <http://dbpedia.org/ontology/>
                 PREFIX dbr: <http://dbpedia.org/resource/>
@@ -38,3 +40,8 @@
   (for [triple (g.query cquery)]
     (g.add triple))
   (.serialize g :destination "musician_network.owl" :format "xml"))
+
+(setv genre-query #[[PREFIX : <file:///home/sean/Code/musician-graph/musician_network.owl#>
+                     SELECT DISTINCT ?genre
+                     WHERE {?band dbo:background "group_or_band" . 
+                            ?band dbo:genre ?genre .}]])
