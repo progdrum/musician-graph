@@ -29,6 +29,7 @@ docker run --rm -p 3030:3030 -v $(pwd):/usr/share/data atomgraph/fuseki --file=m
 ```
 
 This example line uses the `musician_graph.owl` ontology file, but do replace this with the name of your ontology file, should it be named differently for any reason.
+Also, do ensure that at line 9 of `constructor.hy`, you change the file path in the first `PREFIX` declaration to match the path of where your `.owl` file is.
 
 ### Why Hy?
 
